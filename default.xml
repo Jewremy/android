@@ -5,13 +5,12 @@
            fetch="https://android.googlesource.com/" />
 
   <remote  name="github"
-	fetch="git://github.com/"
-        review="review.cyanogenmod.com" />
+           fetch="git://github.com/"
+           review="review.cyanogenmod.com" />
 
   <remote  name="omapzoom"
-        fetch="git://git.omapzoom.org/"
-        review="review.omapzoom.org" />
-        
+	   fetch="git://git.omapzoom.org/"
+	   review="review.omapzoom.org" />
   <default revision="refs/heads/cm-7.2.0"
            remote="github"
            sync-j="4" />
@@ -270,6 +269,7 @@
   <project path="frameworks/base" name="Hashcode/android_frameworks_base" remote="github" revision="gingerbread" />
   <project path="hardware/ti/omap3" name="Hashcode/android_hardware_ti_omap3" remote="github" revision="gingerbread" />
   <project path="hardware/ti/omx" name="Hashcode/android_hardware_ti_omx" remote="github" revision="gingerbread" />
+  <project path="hardware/ti/syslink" name="Hashcode/android_hardware_ti_syslink" remote="github" revision="gingerbread" />
   <project path="hardware/ti/tiler" name="platform/hardware/ti/tiler" remote="omapzoom" revision="memmgr_1.0" />
   <project path="hardware/ti/wpan" name="Hashcode/android_hardware_ti_wpan" remote="github" revision="gingerbread" />
   <project path="packages/apps/Phone" name="Hashcode/android_packages_apps_Phone" remote="github" revision="gingerbread" />
@@ -277,38 +277,4 @@
   <project path="vendor/cyanogen" name="Hashcode/android_vendor_cyanogen" remote="github" revision="gingerbread" />
   <project path="vendor/motorola/solana" name="Hashcode/android_vendor_motorola_solana" remote="github" revision="gingerbread" />
   <project path="vendor/motorola/spyder" name="Hashcode/android_vendor_motorola_spyder" remote="github" revision="gingerbread" />
-
-	
-	
-	  <!-- CM removals -->
-  <remove-project name="CyanogenMod/android_hardware_ti_omap3-compat" />
-  <remove-project name="CyanogenMod/android_hardware_ti_omx" />
-  <remove-project name="CyanogenMod/android_hardware_ti_syslink" />
-  <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
-  <remove-project name="CyanogenMod/android_packages_apps_Phone" />
-  <remove-project name="CyanogenMod/android_vendor_cyanogen" />
-
-  <!-- CM Replacements -->
-  <project path="bootable/recovery" name="Hashcode/android_bootable_recovery" />
-  <project path="frameworks/base" name="Hashcode/android_frameworks_base" />
-  <project path="hardware/ti/omap3" name="STS-Dev-Team/android_hardware_ti_omap3" />
-  <project path="hardware/ti/omx" name="Hashcode/android_hardware_ti_omx" />
-  <project path="hardware/ti/syslink" name="Hashcode/android_hardware_ti_syslink" />
-  <project path="hardware/ti/wpan" name="Hashcode/android_hardware_ti_wpan" />
-  <project path="packages/apps/Phone" name="Hashcode/android_packages_apps_Phone" />
-  <project path="system/core" name="Hashcode/android_system_core" />
-  <project path="vendor/cyanogen" name="Hashcode/android_vendor_cyanogen" />
-
-  <!-- Omapzoom Projects -->
-  <project path="hardware/ti/tiler" name="platform/hardware/ti/tiler" remote="omapzoom" revision="memmgr_1.0" />
-  <project path="packages/apps/OMAPCamera" name="platform/packages/apps/OMAPCamera" remote="omapzoom" revision="gingerbread"/>
-
-  <!-- local projects -->
-  <project path="device/motorola/targa" name="STS-Dev-Team/android_device_motorola_targa" />
-  <project path="vendor/motorola/targa" name="STS-Dev-Team/android_vendor_motorola_targa" />
-  <project path="device/motorola/solana" name="Hashcode/android_device_motorola_solana" />
-  <project path="vendor/motorola/solana" name="Hashcode/android_vendor_motorola_solana" />
-  <project path="vendor/verizon" name="STS-Dev-Team/proprietary_vendor_verizon" />
-  <project path="packages/apps/DockAudio" name="Atrix-Dev-Team/android_packages_apps_DockAudio" revision="refs/heads/gingerbread" />
-
 </manifest>
